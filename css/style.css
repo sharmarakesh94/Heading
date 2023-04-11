@@ -1,0 +1,285 @@
+body{
+    background: #fff;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 1180px;
+    margin: auto;
+}
+
+/* header-start */
+.logo img{
+    width: 140px;
+}
+nav li{
+    margin-right: 30px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav a:hover{
+    color: #f2b705;
+}
+nav a{
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all ease 0.5s;
+}
+.log-button:hover{
+    background: #f2b705;
+    color: #fff;
+}
+.log-button{
+    background: #1d1800;
+    border-radius: 5px;
+    transition: all ease 0.5s;
+    color: #fff;
+    padding: 12px 32px;
+}
+.header-detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.slider{
+    background-image: url(../image/slider.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: block;
+}
+.slider-derail p{
+    color: #f5f5f5;
+    margin-top: 20px;
+}
+.slider-derail{
+    width: 50%;
+    padding: 138px 0;
+}
+.slider .slider-derail h1 span{
+    color: #f2b705;
+}
+.slider .slider-derail h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+}
+.slider-button:hover{
+    background: #1d1800;
+    color: #fff;
+}
+.slider-button{
+    transition: all ease 0.5s;
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #f2b705;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+}
+.about-detail{
+    margin-top: 100px;
+}
+.about-us p{
+    color: #1d1800;
+    margin-top: 20px;
+    line-height: 22px;
+}
+.about-us{
+    width: 49%;
+}
+.about-us h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #1d1800;
+}
+.about-right img{
+    width: 100%;
+    display: block;
+}
+.about-detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-right{
+    width: 49%;
+}
+.team-heading h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #1d1800;
+}
+.team-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.team-heading p{
+    color: #1d1800;
+    margin-top: 8px;
+    line-height: 22px;
+}
+.team{
+    margin-top: 100px;
+}
+.team-card h3{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1d1800;
+}
+.team-card p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.team-card{
+    text-align: center;
+    width: 260px;
+    border-bottom: 4px solid #f2b705;
+    padding-bottom: 20px;
+}
+.team-card img{
+    width: 260px;
+    display: block;
+}
+.team ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+footer{
+    background: #1d1800;
+    color: #fff;
+    padding: 100px 0 60px 0;
+    margin-top: 100px;
+}
+.footer-logo p{
+    color: #fff;
+    margin-top: 20px;
+}
+.footer-logo {
+    width: 20%;
+}
+.footer-logo img{
+    width: 140px;
+}
+.info h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.info li:first-child{
+    margin-top: 20px;
+}
+.info li a:hover{
+    color: #f2b705;
+}
+.info li a{
+    color: #fff;
+    transition: all ease 0.5s;
+}
+.info li{
+    margin-top: 10px;
+}
+.info{
+    width: 18%;
+}
+.footer-detail {
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    display: none;
+}
+@media screen and (max-width: 767px) {
+    .container{
+        width: 100%;
+        padding: 0 18px;
+    }
+    .menu img{
+        width: 30px;
+    }
+    .menu{
+        display: block;
+    }
+    .slider-derail {
+        width: 90%;
+        padding: 90px 0;
+    }
+    .slider .slider-derail h1 {
+        font-size: 30px;
+        font-weight: 700;
+        color: #fff;
+    }
+    nav{
+        display: none;
+    }
+    .about-detail {
+        flex-direction: column-reverse;
+    }
+    .about-us {
+        width: 100%;
+    }
+    .about-right {
+        width: 100%;
+    }
+    .about-us h2{
+        margin-top: 30px;
+    }
+    .team ul{
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    .team-card{
+        width: 100%;
+    }
+    .team-card img{
+        width: 100%;
+    }
+    .team ul li{
+        margin-top: 30px;
+        width: 48%;
+    }
+    .team-card h3{
+        font-size: 16px;
+    }
+    .team-card p {
+        font-size: 14px;
+    }
+    .footer-detail {
+        flex-direction: column;
+    }
+    .footer-logo{
+        width: 100%;
+    }
+    .info ul{
+        display: none;
+    }
+    .info{
+        margin-top: 30px;
+        width: 100%;
+    }
+}
